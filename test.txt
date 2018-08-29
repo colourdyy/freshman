@@ -1,0 +1,19 @@
+
+2018-07-24 16:58:10 [Thread-2] DEBUG com.ebupt.crbt.sms.plugin.message.CommInvokePackageDecoderImpl  - access Number:106588309999  userNumber:13575459822 messageContent:1
+2018-07-24 16:58:10 [Thread-8] DEBUG com.ebupt.crbt.common.dsen.SqlInterceptor  - 1 - select smscommand0_.operateId as operateId256_, smscommand0_.operateKey as operateKey256_, smscommand0_.phoneNumber as phoneNum3_256_, smscommand0_.beginTime as beginTime256_, smscommand0_.commandInfo1 as commandI5_256_, smscommand0_.commandInfo2 as commandI6_256_, smscommand0_.commandInfo3 as commandI7_256_, smscommand0_.commandInfo4 as commandI8_256_, smscommand0_.commandInfo5 as commandI9_256_, smscommand0_.commandInfo6 as command10_256_, smscommand0_.endTime as endTime256_ from CRBT_SMSCOMMAND smscommand0_ where smscommand0_.phoneNumber='13575459822' and smscommand0_.operateKey='106588309999'
+2018-07-24 16:58:10 [Thread-8] INFO  com.ebupt.aop.ServiceLogger  - SmsServiceImpl.getSmsCommand(13575459822,106588309999),return:com.ebupt.crbt.zmcc.pojo.SmsCommand@1bbaa458, time:4
+2018-07-24 16:58:10 [Thread-8] INFO  com.ebupt.crbt.sms.plugin.addtionalFunction.SMAdapterImpl  - userNumber:13575459822@信息：message is resolved as reply message
+2018-07-24 16:58:10 [pool-4-thread-3057] DEBUG com.ebupt.crbt.common.dsen.SqlInterceptor  - 1 - select smscommand0_.operateId as operateId256_, smscommand0_.operateKey as operateKey256_, smscommand0_.phoneNumber as phoneNum3_256_, smscommand0_.beginTime as beginTime256_, smscommand0_.commandInfo1 as commandI5_256_, smscommand0_.commandInfo2 as commandI6_256_, smscommand0_.commandInfo3 as commandI7_256_, smscommand0_.commandInfo4 as commandI8_256_, smscommand0_.commandInfo5 as commandI9_256_, smscommand0_.commandInfo6 as command10_256_, smscommand0_.endTime as endTime256_ from CRBT_SMSCOMMAND smscommand0_ where smscommand0_.phoneNumber='13575459822' and smscommand0_.operateKey='106588309999'
+2018-07-24 16:58:10 [pool-4-thread-3057] INFO  com.ebupt.aop.ServiceLogger  - SmsServiceImpl.getSmsCommand(13575459822,106588309999),return:com.ebupt.crbt.zmcc.pojo.SmsCommand@777c3422, time:3
+2018-07-24 16:58:10 [pool-4-thread-3057] INFO  com.ebupt.crbt.sms.plugin.services.ReplyMsgHandler  - userNumber:13575459822@信息：Directed to copy ring without user registered(recommend push)
+2018-07-24 16:58:10 [pool-4-thread-3057] INFO  com.ebupt.crbt.sms.plugin.services.Reply.CopyRingReplyProcessor  - Phonenumber : 13575459822
+2018-07-24 16:58:10 [pool-4-thread-3057] INFO  com.ebupt.crbt.sms.plugin.services.BaseSevices  - userNumber:13575459822@信息：downLoading Ring with index:5836523
+2018-07-24 16:58:10 [pool-4-thread-3057] DEBUG com.ebupt.crbt.common.dsen.SqlInterceptor  - 15 - select copyrelog0_.calledNumber as calledNu1_61_0_, copyrelog0_.callingNumber as callingN2_61_0_, copyrelog0_.chargeableIndex as chargeab3_61_0_, copyrelog0_.cusTime as cusTime61_0_, copyrelog0_.errorCode as errorCode61_0_, copyrelog0_.opResult as opResult61_0_ from CRBT_CopyReLog copyrelog0_ where copyrelog0_.calledNumber='15268051235' and copyrelog0_.callingNumber='13575459822' and copyrelog0_.chargeableIndex='5836523'
+2018-07-24 16:58:10 [pool-4-thread-3057] DEBUG com.ebupt.crbt.common.dsen.SqlInterceptor  - 0 - insert into CRBT_CopyReLog (cusTime, errorCode, opResult, calledNumber, callingNumber, chargeableIndex) values ('20180724165810', '', '', '15268051235', '13575459822', '5836523')
+
+
+
+
+
+^C
+[webjoin@ZJHZ-cn91 up-sms]$ ^C
